@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F5FBFF4-761A-468A-9059-39894F2C3A7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Rocks.Server.Plugins</RootNamespace>
+    <AssemblyName>Sitecore.Rocks.Server.Plugins</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\inetpub\wwwroot\sitecore72\Website\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Sitecore.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\inetpub\wwwroot\sitecore66\Website\bin\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Server.1.5.0.0\lib\net45\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a3d60f56f7d71b90, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Client.1.5.0.0\lib\net40\Sitecore.Rocks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=97d4151bbb4c9bdf, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Client.1.5.0.0\lib\net40\Sitecore.Rocks.Plugins.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Server.1.5.0.0\lib\net45\Sitecore.Rocks.Server.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Server.Cms7">
+      <HintPath>..\..\..\..\inetpub\wwwroot\sitecore72\Website\bin\Sitecore.Rocks.Server.Cms7.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Server.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Server.1.5.0.0\lib\net45\Sitecore.Rocks.Server.Core.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Server.Lucene.2313, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Server.1.5.0.0\lib\net45\Sitecore.Rocks.Server.Lucene.2313.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Server.Lucene.2941, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Server.1.5.0.0\lib\net45\Sitecore.Rocks.Server.Lucene.2941.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Server.Lucene.3030, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Server.1.5.0.0\lib\net45\Sitecore.Rocks.Server.Lucene.3030.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Server.Speak, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Server.1.5.0.0\lib\net45\Sitecore.Rocks.Server.Speak.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Server.Validation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Server.1.5.0.0\lib\net45\Sitecore.Rocks.Server.Validation.dll</HintPath>
+      <Private>True</Private>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Speak, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bde424fe5a27fd6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Client.1.5.0.0\lib\net40\Sitecore.Rocks.Speak.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Validation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87bd4324f13866a8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Client.1.5.0.0\lib\net40\Sitecore.Rocks.Validation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.VisualStudio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1cc94664b6ed6bb0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Rocks.Client.1.5.0.0\lib\net40\Sitecore.Rocks.VisualStudio.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryAnalyzer\Functions\FindDuplicates.cs" />
+    <Compile Include="QueryAnalyzer\Functions\FixHTML.cs" />
+    <Compile Include="QueryAnalyzer\Functions\FormatDate.cs" />
+    <Compile Include="QueryAnalyzer\Functions\GetFields.cs" />
+    <Compile Include="QueryAnalyzer\Functions\GetMediaUrl.cs" />
+    <Compile Include="QueryAnalyzer\Functions\GetReferrers.cs" />
+    <Compile Include="QueryAnalyzer\Functions\IsDuplicate.cs" />
+    <Compile Include="QueryAnalyzer\Functions\IsPublished.cs" />
+    <Compile Include="QueryAnalyzer\Functions\IsReferenced.cs" />
+    <Compile Include="QueryAnalyzer\Functions\PublishStatus.cs" />
+    <Compile Include="QueryAnalyzer\Functions\RegexContains.cs" />
+    <Compile Include="QueryAnalyzer\Functions\ToLower.cs" />
+    <Compile Include="QueryAnalyzer\Functions\ToUpper.cs" />
+    <Compile Include="QueryAnalyzer\Functions\Trim.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\AllLanguagesQueryKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\CopyFieldsValueKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\CopyKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\GetActiveUsersKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\InsertFromBranchKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\InsertFromTemplateKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\KickUserKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\MoveKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\PublishWithParamsKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\RecycleKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\RemoveVersionKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\RepublishKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\RestrictedUpdateKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\SafeDeleteKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Keywords\SafePublishKeyword.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\AllLanguagesQueryOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\CopyFieldValuesOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\CopyOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\GetUsersOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\InsertFromBranchOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\InsertFromTemplateOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\KickUserOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\MoveOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\PublishWithParamsOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\RecycleOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\RemoveVersionOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\RepublishOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\RestrictedUpdateOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\SafeDeleteOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Opcodes\SafePublishOpcode.cs" />
+    <Compile Include="QueryAnalyzer\Token\TokenType.cs" />
+    <Compile Include="Requests\HandleRequest.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
